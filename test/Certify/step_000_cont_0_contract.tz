@@ -1,0 +1,34 @@
+parameter (pair %certify (address %address) (string %name));
+storage   (pair (map %certified address string) (address %certifier));
+code
+  {
+    UNPAIR;     # @parameter : @storage
+    SWAP;       # @storage : @parameter
+    # == certify ==
+    # sp.verify(sp.sender == self.data.certifier) # @storage : @parameter
+    DUP;        # @storage : @storage : @parameter
+    DUG 2;      # @storage : @parameter : @storage
+    CDR;        # address : @parameter : @storage
+    SENDER;     # @sender : address : @parameter : @storage
+    COMPARE;    # int : @parameter : @storage
+    EQ;         # bool : @parameter : @storage
+    IF
+      {}
+      {
+        PUSH string "WrongCondition: sp.sender == self.data.certifier"; # string : @parameter : @storage
+        FAILWITH;   # FAILED
+      }; # @parameter : @storage
+    SWAP;       # @storage : @parameter
+    # self.data.certified[params.address] = params.name # @storage : @parameter
+    DUP;        # @storage : @storage : @parameter
+    CAR;        # map address string : @storage : @parameter
+    DUP 3;      # @parameter : map address string : @storage : @parameter
+    CDR;        # string : map address string : @storage : @parameter
+    SOME;       # option string : map address string : @storage : @parameter
+    DIG 3;      # @parameter : option string : map address string : @storage
+    CAR;        # address : option string : map address string : @storage
+    UPDATE;     # map address string : @storage
+    UPDATE 1;   # @storage
+    NIL operation; # list operation : @storage
+    PAIR;       # pair (list operation) @storage
+  };

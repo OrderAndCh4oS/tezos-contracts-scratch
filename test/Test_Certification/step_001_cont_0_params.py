@@ -1,0 +1,1 @@
+sp.record(address = sp.address('tz1Rp4Bv8iUhYnNoCryHQgNzN2D7i3L1LF9C'), name = 'Bob')

@@ -1,0 +1,20 @@
+Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
+ -> (Pair {} "tz1WxrQuZ4CK1MBUa2GqUWK1yJ4J6EtG1Gwi")
+ => ./test/Test_Certification/step_000_cont_0_storage.tz 1
+ => ./test/Test_Certification/step_000_cont_0_storage.json 1
+ => ./test/Test_Certification/step_000_cont_0_sizes.csv 2
+ => ./test/Test_Certification/step_000_cont_0_storage.py 1
+ => ./test/Test_Certification/step_000_cont_0_types.py 7
+ => ./test/Test_Certification/step_000_cont_0_contract.tz 34
+ => ./test/Test_Certification/step_000_cont_0_contract.json 46
+ => ./test/Test_Certification/step_000_cont_0_contract.py 14
+ => ./test/Test_Certification/step_001_cont_0_params.py 1
+ => ./test/Test_Certification/step_001_cont_0_params.tz 1
+ => ./test/Test_Certification/step_001_cont_0_params.json 1
+Executing certify(sp.record(address = sp.resolve(sp.test_account("Bob").address), name = 'Bob'))...
+ -> (Pair {Elt "tz1Rp4Bv8iUhYnNoCryHQgNzN2D7i3L1LF9C" "Bob"} "tz1WxrQuZ4CK1MBUa2GqUWK1yJ4J6EtG1Gwi")
+ => ./test/Test_Certification/step_002_cont_0_params.py 1
+ => ./test/Test_Certification/step_002_cont_0_params.tz 1
+ => ./test/Test_Certification/step_002_cont_0_params.json 1
+Executing certify(sp.record(address = sp.resolve(sp.test_account("Jill").address), name = 'Jill'))...
+ -> (Pair {Elt "tz1Rp4Bv8iUhYnNoCryHQgNzN2D7i3L1LF9C" "Bob"; Elt "tz1UsWpT7UXAWo6n371yQvGLfbCzNWLbicjb" "Jill"} "tz1WxrQuZ4CK1MBUa2GqUWK1yJ4J6EtG1Gwi")

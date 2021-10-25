@@ -1,0 +1,1 @@
+sp.record(certified = {}, certifier = sp.address('tz1Ytv9pMTm6sg7qyuJ1uzWaoYujKUVdYCwQ'))
