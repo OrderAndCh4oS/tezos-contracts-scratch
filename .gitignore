@@ -1,5 +1,5 @@
 .idea
 node_modules
 compilation
-tests
+test
 __pycache__

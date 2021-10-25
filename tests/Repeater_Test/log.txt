@@ -1,0 +1,15 @@
+Creating contract KT1TezoooozzSmartPyzzSTATiCzzzwwBFA1
+ -> "start"
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_storage.tz 1
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_storage.json 1
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_sizes.csv 2
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_storage.py 1
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_types.py 7
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_contract.tz 10
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_contract.json 5
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_000_cont_0_contract.py 12
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_001_cont_0_params.py 1
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_001_cont_0_params.tz 1
+ => /Users/seancooper/smartpy-cli/tests/Repeater_Test/step_001_cont_0_params.json 1
+Executing repeat('end')...
+ -> "end"
